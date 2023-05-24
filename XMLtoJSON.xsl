@@ -11,6 +11,9 @@
 	<xsl:template match="//JsonPayload//*" mode="ArrayElement">
 		<xsl:call-template name="Properties"/>
 	</xsl:template>
+		<xsl:template match="//JsonPayload//*" mode="ArrayElement">
+		<xsl:call-template name="Properties"/>
+	</xsl:template
 	<xsl:template match="//JsonPayload1//*">
     "<xsl:value-of select="name()"/>" :<xsl:call-template name="Properties">
 			<xsl:with-param name="parent" select="'Yes'"> </xsl:with-param>
